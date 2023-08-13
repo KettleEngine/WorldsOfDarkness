@@ -1,0 +1,24 @@
+
+.column{
+    padding: 1rem;
+}
+
+.row1{
+    float: left;
+}
+
+.row2{
+}
+
+.row3{  
+}
+
+.generalInput{
+    display: flex;
+    align-items: center;
+}
+
+#label{
+    float:left;
+}
+
