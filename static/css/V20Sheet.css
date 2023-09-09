@@ -1,21 +1,16 @@
-
 .column{
-    padding: 1rem;
-}
-
-.row1{
+    padding: 2rem;
+    max-width: 33%;
     float: left;
-}
-
-.row2{
-}
-
-.row3{  
 }
 
 .generalInput{
     display: flex;
     align-items: center;
+}
+
+.generalTextInput{
+    width: 40%;
 }
 
 #label{
