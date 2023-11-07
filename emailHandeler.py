@@ -13,3 +13,7 @@ class Email():
             return True
         else:
             return False
+    
+    # checks if the email provided is a real email address returns true if it is and false if not    
+    def checkRealEmail(self, email):
+        pass

@@ -8,7 +8,7 @@ class Test():
         self.characterName = "charlie"
         self.chronicleName = "chronicle"
         self.nature = "sadist"
-        self.demeanor = "child"
+        self.demeanor = "Sadist"
         self.consept = "test vampire"
         self.clan = "tremere"
         self.generation = 10

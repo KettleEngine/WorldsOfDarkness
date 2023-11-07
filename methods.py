@@ -64,3 +64,12 @@ class methods():
         #email was not registered so there is no point continuing and wasting time
         else:
             return False
+    
+    # this function handles saving all the data of a character sheet into the database
+    # general data is the information like name, player, chronicle, nature, etc
+    # attributes is a list of all the attribute values
+    # abilities is like attributes but for abilities instead
+    # advantages is the same as abilities and attributes but with the difference of an extra dimention to the lists becasue of the text required for diciplins and advantages
+    # other is just all the other data of the sheet
+    def saveSheet(self, userID, generalData, attributes, abilities, advantages, other):
+        pass

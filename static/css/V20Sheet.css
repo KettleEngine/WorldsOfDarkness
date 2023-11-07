@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.attributesInput{
+    display: flex;
+    align-items: center;
+}
+
 .generalTextInput{
     width: 40%;
 }
@@ -16,4 +21,3 @@
 #label{
     float:left;
 }
-
