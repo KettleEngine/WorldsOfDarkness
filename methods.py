@@ -2,6 +2,7 @@ from databaseHandler import *
 from emailHandeler import *
 import random
 import hashlib
+from hashingHandeler import *
 
 class methods():
     
@@ -11,13 +12,16 @@ class methods():
         
         #email handler
         self.email = Email()
+        
+        #hash function
+        self.hash = Hash()
     
     def addUser(self, username, email, password):
         #gets a unique user ID
         userID = self.generateUID()
         
         #hashes password
-        password = self.hash(password)
+        password = self.hash.hash(password)
         
         if self.email.checkEmail(email) == True:
         
@@ -40,16 +44,10 @@ class methods():
         #once the loop is broken we know that num is uneque so it can be returned
         return num
     
-    #to hash data like passwords to protect them incase of a data leak
-    def hash(self, data):
-        sha256_hash = hashlib.sha256()
-        sha256_hash.update(data.encode())
-        return sha256_hash.hexdigest()            
-    
     #returns the userID if all the inputs match up and flase if they dont match up
     def login(self, email, password):
         #hash the password
-        password = self.hash(password)
+        password = self.hash.hash(password)
         
         check = self.db.queryDB("SELECT userID FROM users WHERE email = '{}';".format(email))
         

@@ -12,4 +12,4 @@ pw = "test"
 #print(meth.checkEmail("csutton893@gmail.com"))
 #print(meth.checkEmail("cs"))
 
-#print(meth.login(email, pw))
+print(meth.login(email, pw))
