@@ -1,7 +1,9 @@
 from methods import *
+from hashingHandeler import *
 
 meth = methods()
 
+hash = Hash()
 email = "csutton893@gmail.com"
 pw = "test"
 
@@ -12,4 +14,6 @@ pw = "test"
 #print(meth.checkEmail("csutton893@gmail.com"))
 #print(meth.checkEmail("cs"))
 
-print(meth.login(email, pw))
+#print(meth.login(email, pw))
+
+hash.dicing(hash.hash(pw))
