@@ -27,9 +27,12 @@ class methods():
         
             self.db.commitDB("INSERT INTO users (userID, username, email) VALUES ({}, '{}', '{}')".format(userID, username, email))
             self.db.commitDB("INSERT INTO passwords (userID, password) VALUES ({}, '{}')".format(userID, password))
+            
+            #returns true to tell the server that this function has executed succesfully
+            return True
 
         else:
-            #return fasle measne that it failed the email check and the server can then tell the user
+            #return fasle means that it failed the email check and the server can then tell the user
             return False
         
     #generates a uneque user id for creating a new user

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V20 Character Sheet</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+    <link rel="stylesheet" type="text/css" href={{ url_for('static',filename='css/login.css') }}>
+</head>
+
+<body>
+
+    <div id="navBar"> 
+        
+    </div>
+
+    <div id="loginBody">
+        
+        <form method="post">
+
+            <label for="username"> username: </label> <br>
+            <input type="text" id="username" name="username" placeholder="username"> <br> <br>
+
+            <label for="email"> email: </label> <br>
+            <input type="text" id="email" name="email" placeholder="example@example.com"> <br> <br>
+
+            <label for="password"> password: </label> <br>
+            <input type="password" id="password" name="password" placeholder="*****"> <br> <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+</body>
+</html>

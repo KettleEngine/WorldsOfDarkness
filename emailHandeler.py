@@ -1,8 +1,10 @@
 #this file is for handeling anything to do with emails such as email verifcations and notifcations
+from databaseHandler import *
 
 class Email():
     def __init__(self):
-        pass
+        #database handler
+        self.db = DB()
     
     #checks for the presence of an email
     def checkEmail(self, email):
