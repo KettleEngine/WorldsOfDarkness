@@ -96,8 +96,6 @@ class Hash():
             dicedHash = dicedHash + copylist[asciiList[i][0]][1]
             
         return dicedHash
-            
-                
     
     def sortArrays(self, list):
         for passnum in range(len(list)-1,0,-1):

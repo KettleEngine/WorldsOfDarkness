@@ -29,10 +29,9 @@ def register():
         password = request.form.get('password')
         
         if methods.addUser(username, email, password) == True:
-            print("user: ", username, " added")
+            return render_template('general/register.html', result=True)
         else:
-            print("Email is already registered")
-        return render_template('general/register.html')
+            return render_template('general/register.html', result=False)
     else:
         return render_template('general/register.html')
 
